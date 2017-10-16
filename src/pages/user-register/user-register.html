@@ -1,0 +1,28 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>{{ 'SIGNUP_TITLE' | translate }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+  <form (submit)="doRegister()">
+    <ion-list>
+
+      <ion-item>
+        <ion-label fixed>{{ 'LOGINNAME' | translate }}</ion-label>
+        <ion-input type="text" [(ngModel)]="account.loginName" name="loginName" placeholder="手机号码"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label fixed>{{ 'PASSWORD' | translate }}</ion-label>
+        <ion-input type="password" [(ngModel)]="account.password" name="password" placeholder="6位数字或字母"></ion-input>
+      </ion-item>
+
+      <div padding>
+        <button ion-button color="primary" block>{{ 'SIGNUP_BUTTON' | translate }}</button>
+      </div>
+
+    </ion-list>
+  </form>
+</ion-content>

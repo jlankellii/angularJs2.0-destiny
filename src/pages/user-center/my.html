@@ -1,0 +1,28 @@
+<ion-header >
+  <ion-navbar color="primary">
+    <ion-title>{{ pageTitle }}</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="bg_f8f8f8">
+  <ion-list>
+      <button ion-item no-lines (click)="showDetail()" class="margin_t_b_8 bg_fff">
+        <ion-avatar item-start>
+          <ion-img src="../../assets/img/arrow.jpg"></ion-img>
+        </ion-avatar>
+        <p>{{user.nick}}</p>
+        <p>{{user.phone}}</p>
+      </button>
+    <button ion-item  (click)="showMyMessage()" >
+      <ion-icon name="chatboxes" item-start isActive="false"></ion-icon>
+      我的消息
+    </button>
+    <button ion-item no-lines>
+      <ion-icon name="settings" item-start isActive="false"></ion-icon>
+      设置
+    </button>
+    <button ion-button full  color="white" (click)="loginOut()" class="margin_t_b_15">
+      退出
+    </button>
+  </ion-list>
+
+</ion-content>

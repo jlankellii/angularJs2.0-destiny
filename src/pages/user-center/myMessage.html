@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>{{ 'MYMESSAGE_TITLE' | translate }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <button  *ngFor="let user of users" ion-item no-lines (click)="goChat(user)">
+      <p>{{user.nick}}({{user.mutual==true?'相互关注':'对方未关注'}})</p>
+    </button>
+  </ion-list>
+</ion-content>
+

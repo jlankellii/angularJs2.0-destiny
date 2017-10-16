@@ -1,0 +1,68 @@
+<ion-content scroll="false" color="primary">
+  <div class="splash-bg">
+    <div class="splash-info">
+      <div class="splash-logo"></div>
+      <!--<div class="splash-intro">-->
+        <!--{{ 'WELCOME_INTRO' | translate }}-->
+      <!--</div>-->
+    </div>
+    <div class="splash-padding">
+      <ion-card class="splash-card">
+        <ion-card-header>
+          <ion-segment [(ngModel)]="segmentModel">
+            <ion-segment-button value="signup"  class="signup">
+              <!--(click)="signup()"-->
+              {{ 'SIGNUP' | translate}}
+            </ion-segment-button>
+            <ion-segment-button  value="login"  class="login">
+              <!--(click)="login()"-->
+              {{ 'LOGIN' | translate}}
+            </ion-segment-button>
+          </ion-segment>
+        </ion-card-header>
+        <ion-card-content (swipe)="swipeEvent($event)">
+          <div [ngSwitch]="segmentModel">
+
+            <form (submit)="doRegister()" *ngSwitchCase="'signup'">
+              <ion-list>
+                <ion-item>
+                  <ion-label fixed>{{ 'LOGINNAME' | translate }}</ion-label>
+                  <ion-input type="text" [(ngModel)]="account.loginName" name="loginName" placeholder="手机号码"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label fixed>{{ 'PASSWORD' | translate }}</ion-label>
+                  <ion-input type="password" [(ngModel)]="account.password" name="password" placeholder="6位数字或字母"></ion-input>
+                </ion-item>
+
+                <div padding>
+                  <button ion-button color="primary" block>{{ 'SIGNUP_BUTTON' | translate }}</button>
+                </div>
+
+              </ion-list>
+            </form>
+
+            <form (submit)="doLogin()" *ngSwitchCase="'login'">
+              <ion-list>
+                <ion-item>
+                  <ion-label fixed>{{ 'USERNAME' | translate }}</ion-label>
+                  <ion-input type="email" [(ngModel)]="account.loginName"  name="loginName"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label fixed>{{ 'PASSWORD' | translate }}</ion-label>
+                  <ion-input type="password" [(ngModel)]="account.password"  name="password"></ion-input>
+                </ion-item>
+                <div padding>
+                  <button ion-button color="primary" block>{{ 'LOGIN_BUTTON' | translate }}</button>
+                </div>
+              </ion-list>
+            </form>
+          </div>
+        </ion-card-content>
+
+      </ion-card>
+    </div>
+    <div padding>
+
+    </div>
+  </div>
+</ion-content>

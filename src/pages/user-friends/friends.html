@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>{{ 'FRIENDS_TITLE' | translate }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+
+    <ion-item *ngFor="let user of users" ion-item (click)="setFollow(user)">
+      <ion-label>{{user.nick}}</ion-label>
+      <ion-toggle value="foo" checked="true" [(ngModel)]="pepperoni"></ion-toggle>
+    </ion-item>
+
+  </ion-list>
+</ion-content>

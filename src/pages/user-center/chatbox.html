@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>{{userNick}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="home" #chat id="chat">
+  <ion-list no-lines>
+    <ion-item class="chat-ion-item" *ngFor="let msg of messages">
+
+      <ion-avatar *ngIf="msg.from != myId" item-start>
+        <img src="http://ionicframework.com/dist/preview-app/www/assets/img/avatar-ts-woody.png">
+      </ion-avatar>
+      <p *ngIf="msg.from != myId" item-start class="chat-info chat-info-my">{{msg.message}}</p>
+
+      <p *ngIf="msg.from == myId" item-end class="chat-info chat-info-you">{{msg.message}}</p>
+      <ion-avatar *ngIf="msg.from == myId" item-end>
+        <img src="http://ionicframework.com/dist/preview-app/www/assets/img/avatar-ts-woody.png">
+      </ion-avatar>
+
+    </ion-item>
+    <!-- <ion-item class="chat-ion-item">
+        <p item-end class="chat-info chat-info-you">我舍友叫我</p>
+        <ion-avatar item-end>
+          <img src="http://ionicframework.com/dist/preview-app/www/assets/img/avatar-ts-woody.png">
+        </ion-avatar>
+      </ion-item>-->
+  </ion-list>
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <!--<p>Ash, Misty, Brock</p>-->
+    <ion-input [(ngModel)]="chatBox" type="text" placeholder="输入信息..."></ion-input>
+    <ion-buttons end>
+      <button ion-button icon-right color="royal" (click)="send(chatBox)">
+        发送
+        <ion-icon name="send"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
+

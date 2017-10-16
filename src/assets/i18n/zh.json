@@ -1,0 +1,71 @@
+{
+  "BACK_BUTTON_TEXT" : "返回",
+
+  "LOGINNAME": "账号",
+  "EMAIL": "邮箱",
+  "USERNAME": "账号",
+  "PASSWORD": "密码",
+  "LOGIN": "登录",
+  "SIGNUP": "注册",
+
+  "TAB1_TITLE": "测测",
+  "TAB2_TITLE": "社区",
+  "TAB3_TITLE": "聊天",
+  "TAB4_TITLE": "我的",
+
+  "MAP_TITLE": "地图",
+
+  "TUTORIAL_SKIP_BUTTON" : "忽略",
+  "TUTORIAL_CONTINUE_BUTTON" : "继续",
+
+  "TUTORIAL_SLIDE1_TITLE": "欢迎进入ionic",
+  "TUTORIAL_SLIDE1_DESCRIPTION": "点吧，开始吧！",
+
+  "TUTORIAL_SLIDE2_TITLE": "继续点！",
+  "TUTORIAL_SLIDE2_DESCRIPTION": "点完才能开始",
+
+  "TUTORIAL_SLIDE3_TITLE": "不要停",
+  "TUTORIAL_SLIDE3_DESCRIPTION": "停下来就完了",
+
+  "TUTORIAL_SLIDE4_TITLE": "好好学习天天向上",
+
+  "WELCOME_INTRO" : "www.minggetu.com",
+
+  "FRIENDS_TITLE": "用户列表",
+
+  "SETTINGS_PROFILE_BUTTON" : "编辑简介",
+
+  "SETTINGS_PAGE_PROFILE": "编辑简介",
+
+  "WELCOME_TITLE": "欢迎",
+
+  "LOGIN_TITLE": "登录",
+  "LOGIN_ERROR": "登录失败",
+  "LOGIN_BUTTON": "登录",
+  "SIGNUP_TITLE": "注册",
+  "SIGNUP_ERROR": "注册失败",
+  "SIGNUP_BUTTON": "注册",
+
+  "BOSUAN_TITLE": "测测",
+
+  "ITEM_CREATE_TITLE": "新增列表",
+  "ITEM_CREATE_CHOOSE_IMAGE": "添加图片",
+
+  "ITEM_NAME_PLACEHOLDER" : "名字",
+  "ITEM_ABOUT_PLACEHOLDER" : "关于",
+
+  "DONE_BUTTON" : "完成",
+  "CANCEL_BUTTON" : "取消",
+  "DELETE_BUTTON" : "删除",
+
+  "CARDS_TITLE": "社交",
+
+  "COMMUNITY_TITLE": "社区",
+  "SEARCH_PLACEHOLDER" : "搜索吧",
+
+  "MY_TITLE":"个人中心",
+  "MYINFO_TITLE":"个人资料",
+
+  "MYMESSAGE_TITLE":"我的消息"
+
+}
